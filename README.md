@@ -10,8 +10,7 @@ Thanks for joining the BCI Game Jam 2019 and downloading the P300 Unity asset! T
 The P300 Unity project was built around the idea of providing a flexible framework for game developers to integrate in the P300 BCI control scheme. To get started, you simply need to add the P300_Unity package to your game. This includes all of the necessary back-end components requried for including a P300 control scheme.
 
 ### Prerequisites
-
-Unity Game Engine, V. 3.12 or higher.
+Unity Game Engine, V. 2019.2.0 or higher. **It is critical to have at least this version of Unity, or else certain parts of the package manager may not work**.
 
 ### Setting up the P300 Variables
 
