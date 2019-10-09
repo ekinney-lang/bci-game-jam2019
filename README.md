@@ -7,7 +7,7 @@ Thanks for joining the BCI Game Jam 2019 and downloading the P300 Unity asset! T
  
 ## Getting Started
 
-The P300 Unity project was built around the idea of providing a flexible framework for game developers to integrate in the P300 BCI control scheme. To get started, you simply need to add the P300_Unity package to your game. This includes all of the necessary back-end components requried for including a P300 control scheme.
+The P300 Unity project was built around the idea of providing a flexible framework for game developers to integrate in the P300 BCI control scheme. To get started, you simply need to import the P300_Unity package to your game. This includes all of the necessary back-end components requried for including a P300 control scheme. 
 
 ### Prerequisites
 Unity Game Engine, V. 2019.2.0 or higher. **It is critical to have at least this version of Unity, or else certain parts of the package manager may not work**.
@@ -63,16 +63,18 @@ That should be it! You should now be able to hit play, and the P300 tool will po
 
 There are several places for you as the developer to alter the P300 tool to do what you want. 
 
-<p>First, you can alter what type of objects are being highlighted by changing the properties of the *cube* prefab. 
+First, you can alter what type of objects are being highlighted by changing the properties of the *cube* prefab. 
 This can include the number of objects you want a user to select from (minimum 2), 
 the colors you'd like to highlight, positioning (e.g. where on the screen you'd want the cubes to be) etc. 
 Even the number of rows/columns of cubes can be chosen and the distance between the rows and columns can be changed.
-The majority of these changes can be done in the *P300_Flashes* component.</p>
+The majority of these changes can be done in the *P300_Flashes* component.
 
-<p>If you want to change what happens when the correct object is selected, you will need to edit the *Inlet_P300* script, lines 61, 69, and 78 where it says a variation of:
+If you want to change what happens when the correct object is selected, you will need to edit the *Inlet_P300* script, lines 61, 69, and 78 where it says a variation of:
 `cube_list[cubeIndex].GetComponent<Renderer>().material.color = Color.green;`
 These 3 lines are what tells Unity what to do with positive findings from the back-end analysis handled in MATLAB or Python. 
-(In this case, it simply recolors the cube's material to be green when selected).</p>
+(In this case, it simply recolors the cube's material to be green when selected).
+ 
+A demo showing off a potential use for this tool is included in the P300_Unity package under the **Demo** folder. There, you will find variations of the *P300_flashes* and *Inlet_P300* script to showcase how this tool could be used for selecting choices in a HUD system, such as for the Hololens. Note that the 'choice' selected in this demo is just randomly selected (as seen in the *Demo_Inlet_P300* script, and requires the proper set-up seen in the actual *Inlet_P300* script for reading in events.
  
 ## Built With
 
