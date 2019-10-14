@@ -45,16 +45,10 @@ Add the *cube* prefab into the game. This will be the primary 'object' the P300 
 From the P300_Unity/Prefabs folder, drag the cube prefab into the game heirarchy. Feel free to have the cube prefab be inactive in the hiearachy.
 ```
 
-Add the *spotlight* prefab into the game. This spotlight gives another means for you to 'highlight' or 'flash' any of the *cube* objects in your scene. **This is may be removed in a future release**
+Add the *cube* game object references to the P300Controller game object and the *P300_Flashes* script.
 
 ```
-From the P300_Unity/Prefabs folder, drag the spotlights prefab into the game heirarchy. Feel free to have the spotlight prefab be inactive in the hiearachy.
-```
-
-Add the *cube* and *spotlight* game object references to the P300Controller game object and the *P300_Flashes* script.
-
-```
-Drag the cube and spotlight game objects to the P300_Flashes script on the P300Controller object under My Cube and My Light respectively.
+Drag the cube game objects to the P300_Flashes script on the P300Controller object under My Cube.
 ```
 
 That should be it! You should now be able to hit play, and the P300 tool will populate a set of *cube* game objects based on the options in the *P300_Flashes* component. Hit "S" to try running single flashes, and you should see an output reading in your debug log naming off each cube every time it is highlighted.
