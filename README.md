@@ -4,6 +4,9 @@ This is the main code respository for the BCI Game Jam 2019. Currently this only
 ## P300_Unity
 
 Thanks for joining the BCI Game Jam 2019 and downloading the P300 Unity asset! This tool was created to help game developers rapidly introduce a simple brain-computer interface (BCI) control scheme (the P300) into their games. The P300 Unity asset has been written for integration into a BCI processing pipeline using the LabStreamingLayer (LSL) backbone to synchronize events occuring in the game with specific brain activity.
+
+## P300 Unity Backend Resources
+The back-end resources for MATLAB and LabStreamingLayer for the P300 Unity tool used in the BCI Game Jam 2019 have been included as requested. Please see the README manual inside the .zip folder for detailed instructions on how to set-up and utilize this repository.
  
 ## Getting Started
 
